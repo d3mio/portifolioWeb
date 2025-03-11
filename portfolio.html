@@ -1,53 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disas Gamage - Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <script defer src="portfolio.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disas Gamage - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <script defer src="portfolio.js"></script>
 </head>
 <body>
-    <header>
-        <img src="profilepic.svg" alt="Profile Picture" class="avatar">
-        <h1 class="fade-in">Disas Gamage</h1>
-        <p class="fade-in">Fluent in Python, CSS, Java, HTML</p>
-        <div class="social-icons">
-            <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
-            <a href="#"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-            <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="icons/discord.png" alt="Discord"></a>
-            <a href="#"><img src="icons/reddit.png" alt="Reddit"></a>
-            <a href="#"><img src="icons/snapchat.png" alt="Snapchat"></a>
-            <a href="#"><img src="icons/github.png" alt="GitHub"></a>
+  <nav class="navbar">
+    <div class="logo">DG</div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="fade-in">Hi, I'm <span class="highlight">Disas Gamage</span></h1>
+        <p class="fade-in">Web Designer & Cybersecurity Enthusiast</p>
+        <div class="hero-badges">
+          <span class="badge">Python</span>
+          <span class="badge">CSS</span>
+          <span class="badge">Java</span>
+          <span class="badge">HTML</span>
         </div>
-    </header>
-    
-    <section id="about" class="slide-in">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer and cybersecurity enthusiast, currently studying at IIT - Westminster University. I have a strong background in programming and a deep interest in digital security, content creation, and leadership. My journey started at Nalanda College, where I developed a keen interest in technology and problem-solving. I enjoy collaborating with others, sharing knowledge, and building innovative digital solutions. In addition to coding, I have a creative side, working with digital media tools such as Adobe Photoshop and Lightroom. I am always eager to learn and expand my skills in both development and security. My goal is to contribute meaningfully to the tech industry while fostering a culture of creativity and cybersecurity awareness.</p>
-    </section>
-    
-    <section id="skills" class="slide-in">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">Python</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">Microsoft 365</div>
-            <div class="skill-card">Adobe Illustrator</div>
-            <div class="skill-card">Adobe Photoshop</div>
-            <div class="skill-card">Adobe Lightroom</div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
-    </section>
-    
-    <section id="projects" class="slide-in">
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
-    </section>
-    
-    <footer>
-        <p>Contact me at: disas@example.com</p>
-    </footer>
+      </div>
+      <div class="hero-image">
+        <div class="image-container">
+          <img src="images/profilepic.svg" alt="Profile Picture" class="avatar">
+        </div>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-reddit"></i></a>
+    </div>
+  </header>
+
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="divider"></div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am a passionate web developer and cybersecurity enthusiast, currently studying at IIT - Westminster University. I have a strong background in programming and a deep interest in digital security, content creation, and leadership.</p>
+          <p>My journey started at Nalanda College, where I developed a keen interest in technology and problem-solving. I enjoy collaborating with others, sharing knowledge, and building innovative digital solutions.</p>
+          <p>In addition to coding, I have a creative side, working with digital media tools such as Adobe Photoshop and Lightroom. I am always eager to learn and expand my skills in both development and security.</p>
+          <p>My goal is to contribute meaningfully to the tech industry while fostering a culture of creativity and cybersecurity awareness.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-title">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-title">Projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="divider"></div>
+      <div class="skills-categories">
+        <div class="category">
+          <h3>Programming</h3>
+          <div class="skills-container">
+            <div class="skill-card">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+            </div>
+          </div>
+        </div>
+        <div class="category">
+          <h3>Software</h3>
+          <div class="skills-container">
+            <div class="skill-card">
+              <i class="fab fa-microsoft"></i>
+              <span>Microsoft 365</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-adobe"></i>
+              <span>Adobe Illustrator</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-adobe"></i>
+              <span>Adobe Photoshop</span>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-adobe"></i>
+              <span>Adobe Lightroom</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="divider"></div>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/api/placeholder/400/250" alt="Cybersecurity Dashboard">
+          </div>
+          <div class="project-info">
+            <h3>Cybersecurity Dashboard</h3>
+            <p>A monitoring tool for network security built with Python and React.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">React</span>
+              <span class="tag">Cybersecurity</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/api/placeholder/400/250" alt="E-commerce Platform">
+          </div>
+          <div class="project-info">
+            <h3>E-commerce Platform</h3>
+            <p>A fully responsive e-commerce site with payment integration.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="/api/placeholder/400/250" alt="Digital Art Gallery">
+          </div>
+          <div class="project-info">
+            <h3>Digital Art Gallery</h3>
+            <p>A platform showcasing digital artwork created with Adobe tools.</p>
+            <div class="project-tags">
+              <span class="tag">Adobe</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="#" class="btn btn-primary">View All Projects</a>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="divider"></div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>Feel free to reach out for collaborations, questions, or just to say hello!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>d.sethnadagamage@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Sri Lanka, Colombo</span>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">DG</div>
+          <p>Web Designer & Cybersecurity Enthusiast</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Disas Gamage. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
