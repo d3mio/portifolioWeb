@@ -292,7 +292,7 @@ img {
   height: 350px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: var(--primary-light);
+  background-color:ghostwhite;
   display: flex;
   justify-content: center;
   align-items: center;
